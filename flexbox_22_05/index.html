@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox intro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* 
+            1. it takes all available space as a block box
+            2. it respects width and height and all box model properties (margin, padding)
+            3. you can align the children inside a flexbox
+            4. children inside a flexbox are placed inline
+        */
+        .flex1 {
+            background-color: aqua;
+            display: flex;
+            /* width: 50%; */
+            height: 100px;
+        }
+
+        .flex2,
+        .flex3,
+        .flex4,
+        .flex5,
+        .flex6,
+        .flex7 {
+            display: flex;
+            background-color: bisque;
+            margin: 1rem;
+        }
+
+        .child1 {
+            background-color: blueviolet;
+        }
+
+        .child2 {
+            background-color: brown;
+        }
+
+        span {
+            background-color: aquamarine;
+        }
+
+        .flex3 {
+            justify-content: center;
+        }
+
+        .flex4 {
+            justify-content: space-evenly;
+            /* text-align: center; */
+        }
+
+        .flex5 {
+            justify-content: space-between;
+            /* text-align: center; */
+        }
+
+        .flex6 {
+            justify-content: space-around;
+            /* text-align: center; */
+        }
+
+        .flex7 {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            /* text-align: center; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex1">This is a Flexbox</div>
+    <div class="flex2">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+    justify-content center
+    <div class="flex3">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+    justify-content space-evenly
+    <div class="flex4">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+    justify-content space-between
+    <div class="flex5">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+    justify-content space-around
+    <div class="flex6">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+    justify-content flex start/end
+    <div class="flex7">
+        <div class="child1">Child 1</div>
+        <div class="child2">Child 2</div>
+        <span>Child3</span>
+    </div>
+</body>
+
+</html>
