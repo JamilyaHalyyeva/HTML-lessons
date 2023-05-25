@@ -1,0 +1,14 @@
+header {
+  height: 100vh;
+  width: 100%;
+  background-image: url(Hinterrhein.svg);
+  background-size: cover;
+}
+
+footer {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.models-resource.com/resources/big_icons/1/677.png?updated=1464391542);
+
+  background-size: cover;
+}

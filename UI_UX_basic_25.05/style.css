@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+}
+main {
+  width: 90%;
+  margin: 80px auto;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.container .card {
+  flex-basis: 300px;
+  position: relative;
+}
+.container .card img {
+  width: 100%;
+  box-shadow: 0px 3px 6px rgb(143, 138, 138);
+}
+.container .card .icon {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background-color: #ffffff;
+  padding: 0.5em;
+  border-radius: 50%;
+}
+
+.container .card .cost {
+  font-weight: bold;
+}
+.container .card .color {
+  color: rgb(83, 86, 90);
+}
+
+.container .cardh3 {
+  font-weight: normal;
+  padding-top: 0, 5em;
+}
+.container .card .fit,
+.container .card .color,
+.container .card .cost {
+  padding-top: 0, 5em;
+}
+.container .card .fit,
+.container .card .color {
+  font-weight: lighter;
+}
+.container .card .size {
+  width: 94%;
+  height: 30%;
+  display: none;
+  background-color: rgba(250, 250, 250, 0.759);
+  position: absolute;
+  top: 50%;
+  margin: 0 3%;
+  border-radius: 0.3rem;
+}
+.container .card img:hover ~ .size,
+.container .card .size:hover {
+  display: block;
+}
+
+.container .card .size h4 {
+  text-align: center;
+  margin-top: 1rem;
+}
+.container .card .size div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.container .card .size div span {
+  background-color: white;
+  flex-basis: 20%;
+  padding: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 3px 6px rgb(143, 138, 138);
+}
+.container .card .size div span:hover {
+  background-color: orange;
+  color: #ffffff;
+}
