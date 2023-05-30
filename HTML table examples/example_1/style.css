@@ -1,0 +1,16 @@
+table {
+  width: 60vw;
+  border: 2px solid black;
+}
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+img {
+  width: 6rem;
+  /* margin: 1rem; */
+}
+td {
+  text-align: center;
+}
