@@ -1,0 +1,25 @@
+table {
+  width: 100vw;
+}
+
+/* tr,
+th,
+td {
+  border: 1px solid black; 
+} */
+
+tr:first-child {
+  background-color: #888888 !important;
+}
+tr:nth-child(even) {
+  background-color: #c0c0c0;
+}
+tr:nth-child(odd) {
+  background-color: #efefef;
+}
+.column-color {
+  background-color: #faa9a9;
+}
+td {
+  padding: 5px;
+}
