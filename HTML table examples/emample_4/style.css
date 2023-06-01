@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  background-color: rgb(29, 28, 28);
+  align-items: center;
+  flex-direction: column;
+}
+body > p {
+  color: white;
+  font-size: 2rem;
+}
+
+.wrapper {
+  padding: 5px;
+  border: 6px solid black;
+  background-image: url("./img/wood.jpg");
+}
+table {
+  width: 500px;
+  height: 500px;
+  border: 5px solid black;
+  border-spacing: 0px;
+  padding: 3px;
+}
+
+.odd-row > td:nth-child(2n-1) {
+  background-color: black;
+}
+.even-row > td:nth-child(2n) {
+  background-color: black;
+}
+
+.pawn > td:nth-child(n)::before {
+  font-family: "Font awesome 5 free";
+  content: "\f443";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.rook::before {
+  font-family: "Font awesome 5 free";
+  content: "\f447";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+}
+.knight::before {
+  font-family: "Font awesome 5 free";
+  content: "\f441";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+}
+.bishop::before {
+  font-family: "Font awesome 5 free";
+  content: "\f43a";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+}
+.queen::before {
+  font-family: "Font awesome 5 free";
+  content: "\f445";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: xx-large;
+}
+.king::before {
+  font-family: "Font awesome 5 free";
+  font-size: xx-large;
+  content: "\f43f";
+  text-align: center;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+td {
+  height: 60px;
+  width: 60px;
+}
+
+.blacks {
+  color: rgb(91, 88, 88);
+}
+.whites {
+  color: white;
+}
