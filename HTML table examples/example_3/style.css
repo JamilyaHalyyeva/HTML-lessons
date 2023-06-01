@@ -1,0 +1,26 @@
+table,
+th {
+  border: 0.5px solid rgb(220, 221, 223);
+  border-spacing: 0px;
+}
+body {
+  align-items: center;
+}
+table {
+  margin-left: 2rem;
+  width: 90vw;
+}
+td:first-child {
+  /* background-color: aqua; */
+  width: 40em;
+}
+td:last-child {
+  text-align: end;
+}
+tr:nth-child(2n) {
+  background-color: rgb(220, 221, 223);
+}
+
+td {
+  border: 0.25px solid rgb(220, 221, 223);
+}
