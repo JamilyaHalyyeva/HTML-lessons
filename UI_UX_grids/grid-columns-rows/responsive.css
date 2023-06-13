@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #333;
+    color: blueviolet;
+    
+}
+body{
+    display: grid;
+    background-color: rgb(240, 203, 223);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 100px 1fr 100px 100px 100px ;
+}
+header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-column-end: -1;
+}
+div{
+    border: 2px solid rebeccapurple;
+}
+.left{
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+    /* Shotcuts  */
+    grid-column: 1/3;
+    /* grid-column: 1/span 2; */
+}
+footer{
+    background-color: orange;
+    grid-column: 1/4;
+   
+   
+    
+    
+}
