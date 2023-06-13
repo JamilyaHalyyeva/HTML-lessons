@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-grid-main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 1fr));
+    /* grid-template-columns: repeat(auto-fit,200px);
+    grid-template-columns: repeat(4, 1fr); */
+}
+img{
+    width: 100px;
+}
