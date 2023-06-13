@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( 100px, 1fr));
+    background-color: rgb(244, 208, 194);
+    gap: 10px;
+}
+
+.img-large{
+    grid-column: span 2;
+    grid-row: span 2;
+    width: 200px;
+
+}
+img{
+    border: 2px solid red;
+}
