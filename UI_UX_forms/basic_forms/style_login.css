@@ -1,0 +1,28 @@
+body {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  form {
+    background-color: white;
+    padding: 2rem;
+    width: 60%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #333;
+  }
+  input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid lightgray;
+    padding: 5px;
+  }
+  label {
+    color: #333;
+  }
