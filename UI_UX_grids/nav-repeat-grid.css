@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-grid
+{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+/* solitions are  same  */
+/* grid-template-columns: repeat(5, 1fr); */
+grid-template-columns: repeat(4, 100px) 300px;
+background-color: aquamarine;
+height: 100px;
+width: 80%;
+margin: auto;
+gap: 10px;
+}
+
+a{
+    display: flex;
+    border: 2px solid red;
+    background-color: rgb(231, 201, 67);
+    align-items: center;
+    justify-content: center;
+    
+}
