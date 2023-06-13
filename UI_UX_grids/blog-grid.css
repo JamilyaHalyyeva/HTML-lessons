@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .artcl{
+    background-color: rgb(113, 113, 219);
+  }
+  .asd{
+    background-color: orange;
+  }
+  .blog-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 300px;
+  }
+  p{
+    background-color: greenyellow;
+  }
