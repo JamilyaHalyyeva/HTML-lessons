@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  width: 800px;
+  margin: auto;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr 1fr;
+  grid-template-areas:
+    " nav  nav  nav"
+    " main  main  sidebar"
+    " main  main  sidebar"
+    " footer  footer  footer";
+  gap: 10px;
+  padding: 20px;
+}
+
+.item-1 {
+  background-color: lightblue;
+  grid-area: nav;
+}
+
+.item-2 {
+  background-color: lightpink;
+  grid-area: main;
+}
+.item-3 {
+  background-color: lightgreen;
+  grid-area: footer;
+}
+.item-4 {
+  background-color: lightsalmon;
+  grid-area: sidebar;
+}
+
+.header {
+  background-color: rgb(218, 192, 242);
+  grid-area: header;
+}
+.aside {
+  background-color: rgb(249, 182, 155);
+  grid-area: aside;
+}
+.main {
+  background-color: rgb(95, 224, 233);
+  grid-area: main;
+}
+.footer {
+  background-color: aquamarine;
+  grid-area: footer;
+}
+.grid-container-2 {
+  display: grid;
+  width: 90%;
+  margin: auto;
+
+  grid-template-rows: 50px 100px 50px;
+  grid-template-areas:
+    " header header header "
+    " aside main main "
+    " aside main main "
+    " aside footer footer ";
+
+  padding: 20px;
+  gap: 10px;
+}
+
+.picture-1 {
+  background-image: url(https://picsum.photos/100/100?random=1);
+  grid-area: picture-1;
+}
+.picture-2 {
+  background-image: url(https://picsum.photos/100/100?random=2);
+  grid-area: picture-2;
+}
+.picture-3 {
+  background-image: url(https://picsum.photos/200/100?random=3);
+  grid-area: picture-3;
+}
+.picture-4 {
+  background-image: url(https://picsum.photos/200/100?random=4);
+  grid-area: picture-4;
+}
+.picture-5 {
+  background-image: url(https://picsum.photos/200/300?random=5);
+  grid-area: picture-5;
+}
+.picture-6 {
+  background-image: url(https://picsum.photos/200/300?random=6);
+  grid-area: picture-6;
+}
+.picture-7 {
+  background-image: url(https://picsum.photos/200/300?random=7);
+  grid-area: picture-7;
+}
+.picture-8 {
+  background-image: url(https://picsum.photos/200/300?random=8);
+  grid-area: picture-8;
+}
+.picture-9 {
+  background-image: url(https://picsum.photos/200/300?random=9);
+  grid-area: picture-9;
+}
+.picture-10 {
+  background-image: url(https://picsum.photos/200/300?random=10);
+  grid-area: picture-10;
+}
+
+.grid-container-3 {
+  display: grid;
+  grid-template-rows: 100px 90px 25px 25px 100px 100px 100px;
+  background-color: lightgray;
+   gap: 10px;
+  margin: auto;
+  grid-template-areas:
+    ". picture-3 picture-3 picture-2 picture-4 picture-4 ."
+    ". picture-3 picture-3 picture-2 picture-4 picture-4 ."
+    ". picture-5 picture-6 picture-7 picture-8 picture-8 . "
+    ". picture-5 picture-6 picture-7 picture-8 picture-8 . "
+    ". picture-5 picture-6 picture-7 picture-8 picture-8 . "
+    ". picture-5 picture-10 picture-7 picture-1 picture-9 . "
+    ". picture-5 picture-10 picture-7 picture-1 picture-9 . ";
+    font-size: 30px;
+    color: red;
+    padding: 40px;
+}
+.grid-container-3 div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    
+}
